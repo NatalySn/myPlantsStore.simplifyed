@@ -82,6 +82,9 @@ export class CardComponent implements OnInit {
   // Яндекс карты --> работабщий код рандомайзера метки
   yaClick(){
     console.log("clicked");
-    this.clicked=true
+    this.clicked = ! this.clicked
+  }
+  closeModal(){
+    this.clicked = false;
   }
 }
